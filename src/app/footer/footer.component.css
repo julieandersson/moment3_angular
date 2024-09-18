@@ -27,7 +27,7 @@ footer {
 }
 
 /* Styling för mobile */
-@media (min-width: 400px) and (max-width: 600px) {
+@media (max-width: 600px) {
   footer {
     padding: 10px 0;
   }

@@ -34,3 +34,33 @@
   p {
     margin: 0;
   }
+
+  /* MEDIA QUERIES FÖR KONVERTERINGVERKTYG */
+
+  /* Styling för tablet */
+@media (max-width: 900px) {
+  .convert-container {
+      max-width: 80%;
+      padding: 15px;
+  }
+
+  .convert-section {
+      width: 90%;
+      margin-bottom: 15px;
+      padding: 12px;
+  }
+}
+
+/* Styling för mobile */
+@media (max-width: 600px) {
+  .convert-container {
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  .convert-section {
+      width: 90%;
+      margin-bottom: 10px;
+      padding: 10px;
+  }
+}

@@ -38,3 +38,60 @@ body {
   h2 {
     font-size: 1.2em;
   }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+/* MEDIA QUERIES */
+
+/* Styling för tablet */
+
+@media (max-width: 900px) {
+  main {
+      padding: 15px;
+  }
+
+  section {
+      max-width: 85ch;
+  }
+
+  h1 {
+      font-size: 1.3em;
+  }
+
+  h2 {
+      font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+}
+
+/* Styling för mobile */
+
+@media (max-width: 600px) {
+  main {
+      max-width: 95%;
+      padding: 10px;
+  }
+
+  section {
+      max-width: 100%;
+  }
+
+  h1 {
+      font-size: 1.2em;
+  }
+
+  h2 {
+      font-size: 1em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+}
+
+
