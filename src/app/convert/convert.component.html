@@ -1,3 +1,48 @@
+<div class="convert-container">
 <h1>Konvertering</h1>
 
-<p>Konverterings-sidan!</p>
+<section>
+<p>Hej och välkommen! Testa gärna nedan konverterings-funktion för att konvertera meter till fot,
+    Celsius till Fahrenheit, eller vice versa!<br>
+    Fyll i den siffra du vill konvertera och resultatet kommer automatiskt 
+    visas nedan.
+</p>
+</section>
+
+  <!-- Meter till fot -->
+  <div class="convert-section">
+    <h2>Konvertera meter till fot</h2>
+    <label for="meters">Meter:</label>
+    <!-- ngModel för databindning (tvåvägsbindning) -->
+    <input type="number" [(ngModel)]="meters" id="meters" placeholder="Ange meter" />
+    <p>Resultat: {{ meters }} meter är {{ metersToFeet() }} fot.</p>
+  </div>
+
+<!-- Fot till meter -->
+<div class="convert-section">
+    <h2>Konvertera fot till meter</h2>
+    <label for="feet">Fot:</label>
+    <!-- ngModel för databindning (tvåvägsbindning) -->
+    <input type="number" [(ngModel)]="feet" id="feet" placeholder="Ange fot" />
+    <p>Resultat: {{ feet }} fot är {{ feetToMeters() }} meter.</p>
+  </div>
+
+  <!-- Celsius till Fahrenheit -->
+  <div class="convert-section">
+    <h2>Konvertera Celsius till Fahrenheit</h2>
+    <label for="celsius">Celsius:</label>
+    <!-- ngModel för databindning (tvåvägsbindning) -->
+    <input type="number" [(ngModel)]="celsius" id="celsius" placeholder="Ange Celsius" />
+    <p>Resultat: {{ celsius }} °C är {{ celsiusToFahrenheit() }} °F.</p>
+  </div>
+
+  <!-- Fahrenheit till Celsius -->
+  <div class="convert-section">
+    <h2>Konvertera Fahrenheit till Celsius</h2>
+    <label for="fahrenheit">Fahrenheit:</label>
+    <!-- ngModel för databindning (tvåvägsbindning) -->
+    <input type="number" [(ngModel)]="fahrenheit" id="fahrenheit" placeholder="Ange Fahrenheit" />
+    <p>Resultat: {{ fahrenheit }} °F är {{ fahrenheitToCelsius() }} °C.</p>
+  </div>
+</div>
+

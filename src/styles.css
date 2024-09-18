@@ -18,6 +18,18 @@ body {
     border-radius: 8px;
   }
 
-  h1 {
+  section {
+    padding: 20px;
+  }
+
+  h1, h2 {
     text-align: center;
+  }
+
+  h1 {
+    font-size: 1.4;
+  }
+
+  h2 {
+    font-size: 1.2em;
   }
