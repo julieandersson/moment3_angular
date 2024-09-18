@@ -30,4 +30,12 @@ header {
   nav ul li a:hover {
     color: #1f3b57;
   }
+
+  .active {
+    background-color: #7dc0ff;
+    padding: 20px;
+    border-radius: 5px;
+  }
   
+
+  /* MEDIA QUERIES FÖR HEADER */

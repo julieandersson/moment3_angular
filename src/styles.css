@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+
+  main {
+    padding: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
+
+  h1 {
+    text-align: center;
+  }
