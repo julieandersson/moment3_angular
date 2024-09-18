@@ -39,3 +39,46 @@ header {
   
 
   /* MEDIA QUERIES FÖR HEADER */
+
+  /* Styling för tablet */
+@media (max-width: 900px) {
+  header {
+    height: 60px;
+    padding: 5px 0;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    font-size: 1.2em;
+  }
+}
+
+/* Styling för mobile */
+@media (max-width: 600px) and (min-width: 400px) {
+  header {
+    height: 110px;
+    padding: 5px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+  
+  .active {
+    padding: 10px 15px;
+  }
+}
+
