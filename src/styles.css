@@ -19,15 +19,15 @@ body {
   }
 
   section {
-    padding: 20px;
     margin: 0 auto;
     display: flex;
+    max-width: 80ch;
     flex-direction: column;
     align-items: center;
     line-height: 1.6;
   }
 
-  h1, h2 {
+  h1, h2, h3 {
     text-align: center;
   }
 

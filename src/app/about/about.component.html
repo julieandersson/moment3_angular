@@ -1,4 +1,64 @@
 <h1>Om</h1>
 
-<p>Detta är en om-sida!</p>
+<section>
+    <h2>Beskrivning av webbapplikation</h2>
+    <p>
+        Denna uppgift gick ut på att skapa en webbapplikation som bygger på Angular och som består utav minst tre undersidor, varav en undersida 
+        för konvertering av värden; meter till fot, Celsius till Fahrenheit och vice versa. Resterande två undersidor var valfria.
+        Uppgiften avser moment 3 i kursen DT208G - Programmering i TypeScript och är skapad av mig, Julie Andersson.
+    </p>
+</section>
+
+<section>
+    <h3>Navigering</h3>
+    <p>
+        Navigeringen på denna webbapplikation är skapad med Angulars router-modul. Samtliga rutter är definerade i filen app.routes.ts för att koppla 
+        sökvägar till specifika komponenter. T.ex. har det skapats routes för felaktig anrop, där användaren får ett felmeddelande att sidan inte finns och hänvisas att söka om på nytt.
+        Detta är en bra säkerhetsåtgärd om användaren har råkat skriva fel. routerLink och routerLinkActive har används för att binda länkarna i navigeringsmenyn till en specifik rutt och för att 
+        visa vilken länk som är aktiv. Detta är ett sätt att markera vilken länk som är aktuell i navigeringsmenyn.
+    </p>
+</section>
+
+<section>
+    <h3>Konverteringsverktyg</h3>
+    <p>
+        För att skapa konverteringsverktyget har jag skapat en separat komponent "convert" som också är en av mina undersidor.
+        I convert.component.html skapade jag fyra sektioner, var och en för specifik konvertering. Varje sektion innehåller ett textfält för användaren att ange det den vill räkna ut, och en text som visar det konverterade resultatet. 
+        Här har jag använt ngModel som möjliggör tvåvägsdatabindning, där användarens inmatning i textfältet automatiskt uppdaterar kompotentens dataegenskaper och tvärtom.
+        <br>
+        I convert.component.ts definerade jag konverteringsmetoderna som skapade de nödvändiga beräkningarna. Här valde jag att använda returnmetoden number för att direkt få ut resultat och toFixed(2) 
+        för att säkerställa att det konverterade värdet skrivs ut med två decimaler.
+    </p>
+</section>
+
+<section>
+    <h3>Bilder</h3>
+    <p>
+        Bilden som används på webbapplikationen är lånad av unsplash och infogad som en vanlig src-länk. Bilden ligger i src / assets / images / unsplash.png. Faviconen som följde med som standard har jag behållit.
+    </p>
+</section>
+
+<section>
+    <h3>Styling</h3>
+    <p>
+        Samtlig styling på webbapplikationen är skapad med CSS där den globala stylingen som gäller för hela webbapplikationen har skapats i styles.css och den styling som avser de specifika undersidorna har skapats i respektive component.css-fil.
+        Media queries för varje undersida är också implementerad i respektive css-fil. Detta håller en god struktur på koden och gör det enkelt att hitta om man skulle vilja göra några ändringar.
+    </p>
+</section>
+
+<section>
+    <h3>Komponenter</h3>
+    <p>
+        Utöver komponenterna för samtliga 3 undersidor har jag även skapat två separata komponenter för Header och Footer som har infogats på samtliga 3 undersidor. 
+    </p>
+</section>
+
+<section>
+    <h3>Slutsatser</h3>
+        <p>
+            Det har varit väldigt kul att arbeta med denna uppgift. Till en början var det en stor omställning att jobba med ett ramverk som Angular men under utvecklingens gång
+            förstår jag mer och mer. Strukturen är väldigt tydlig och jag förstår varför det är väldigt användbart. Det jag tycker är svårast är att hålla koll på alla filer då det är så många, 
+            men jag ser fram emot att jobba mer med detta i framtiden!
+        </p>
+</section>
 
