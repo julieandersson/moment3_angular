@@ -1,16 +1,38 @@
 footer {
     background-color: #d0e8ff; 
     padding: 15px 0;
+    height: 60px;
     text-align: center;
     color: #000000;
-    font-size: 0.9rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   footer p {
-    margin: 0;
-    font-size: 1.1em;
+    margin: 0 auto;
+    padding: 7px;
+    font-size: 1em;
   }
 
   /* MEDIA QUERIES FÖR FOOTER */
   
+/* Styling för tablet */
+@media (max-width: 900px) {
+  footer {
+    padding: 15px 0;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+}
+
+/* Styling för mobile */
+@media (min-width: 400px) and (max-width: 600px) {
+  footer {
+    padding: 10px 0;
+  }
+
+  footer p {
+    font-size: 0.8em;
+  }
+}
