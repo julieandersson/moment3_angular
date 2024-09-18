@@ -24,11 +24,6 @@
               {
                 "glob": "**/*",
                 "input": "src/assets"
-              },
-              {
-                "glob": "**/*",
-                "input": "src/_redirects",
-                "output": "/"
               }
             ],
             "styles": [
@@ -87,11 +82,6 @@
               {
                 "glob": "**/*",
                 "input": "src/assets"
-              },
-              {
-                "glob": "**/*",
-                "input": "src/_redirects",
-                "output": "/"
               }
             ],
             "styles": [
